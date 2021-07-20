@@ -1,0 +1,142 @@
+[
+  {
+    "name" : "Camiseta Mescla",
+    "price" : "28,00",
+    "parcels" : "até 3x de R$9,33",
+    "imgSrc" : "img/camiseta-mescla.png",
+    "color" : "cinza",
+    "size" : "M",
+    "priceLine" : "0",
+    "createdAt" : 1623726000000
+  },
+  {
+    "name" : "Saia em couro",
+    "price" : "398,00",
+    "parcels" : "até 5x de R$ 30,00",
+    "imgSrc" : "img/saia-em-couro.png",
+    "color" : "amarelo",
+    "size" : "P",
+    "priceLine" : "301",
+    "createdAt" : 1621047600000
+  },
+  {
+    "name" : "Cardigan Tigre",
+    "price" : "398,00",
+    "parcels" : "Até 5x de R$ 30,00",
+    "imgSrc" : "img/cardigan-tigre.png",
+    "color" : "laranja",
+    "size" : "G",
+    "priceLine" : "301",
+    "createdAt" : 1620874800000
+  },
+  {
+    "name" : "Cardigan Off White",
+    "price" : "99,90",
+    "parcels" : "Até 3x de R$ 33,30",
+    "imgSrc" : "img/cardigan-off-white.png",
+    "color" : "branco",
+    "size" : "M",
+    "priceLine" : "51",
+    "createdAt" : 1620615600000
+  },
+  {
+    "name" : "Body Leopardo",
+    "price" : "129,90",
+    "parcels" : "Até 3x de R$ 43,43",
+    "imgSrc" : "img/body-leopardo.png",
+    "color" : "laranja",
+    "size" : "P",
+    "priceLine" : "51",
+    "createdAt" : 1621220400000
+  },
+  {
+    "name" : "Casaco Pelos",
+    "price" : "398,00",
+    "parcels" : "Até 5x de R$ 30,00",
+    "imgSrc" : "img/casaco-pelos.png",
+    "color" : "laranja",
+    "size" : "GG",
+    "priceLine" : "301",
+    "createdAt" : 1620183600000
+  },
+  {
+    "name" : "Cropped Stripes",
+    "price" : "120,00",
+    "parcels" : "Até 3x de R$ 40,00",
+    "imgSrc" : "img/cropped-stripes.png",
+    "color" : "azul",
+    "size" : "U",
+    "priceLine" : "51",
+    "createdAt" : 1620356400000
+  },
+  {
+    "name" : "Camisa Transparente",
+    "price" : "398,00",
+    "parcels" : "Até 5x de R$ 30,00",
+    "imgSrc" : "img/camisa-transparente.png",
+    "color" : "cinza",
+    "size" : "G",
+    "priceLine" : "301",
+    "createdAt" : 1620442800000
+  },
+  {
+    "name" : "Pochete Cluntch",
+    "price" : "99,00",
+    "parcels" : "Até 3x de R$ 33,00",
+    "imgSrc" : "img/pochete-clutch.png",
+    "color" : "cinza",
+    "size" : "36",
+    "priceLine" : "51",
+    "createdAt" : 1620529200000
+  },
+  {
+    "name" : "Pochete Cluntch",
+    "price" : "99,00",
+    "parcels" : "Até 3x de R$ 33,00",
+    "imgSrc" : "img/pochete-clutch.png",
+    "color" : "cinza",
+    "size" : "38",
+    "priceLine" : "51",
+    "createdAt" : 1619838000000
+  },
+  {
+    "name" : "Cropped Stripes",
+    "price" : "120,00",
+    "parcels" : "Até 3x de R$ 40,00",
+    "imgSrc" : "img/cropped-stripes.png",
+    "color" : "azul",
+    "size" : "40",
+    "priceLine" : "51",
+    "createdAt" : 1619924400000
+  },
+  {
+    "name" : "Camisa Transparente",
+    "price" : "398,00",
+    "parcels" : "Até 5x de R$ 30,00",
+    "imgSrc" : "img/camisa-transparente.png",
+    "color" : "cinza",
+    "size" : "42",
+    "priceLine" : "301",
+    "createdAt" : 1620010800000
+  },
+  {
+    "name" : "Casaco Pelos",
+    "price" : "398,00",
+    "parcels" : "Até 5x de R$ 30,00",
+    "imgSrc" : "img/casaco-pelos.png",
+    "color" : "laranja",
+    "size" : "44",
+    "priceLine" : "301",
+    "createdAt" : 1620097200000
+  },
+  {
+    "name" : "Cropped Stripes",
+    "price" : "120,00",
+    "parcels" : "Até 3x de R$ 40,00",
+    "imgSrc" : "img/cropped-stripes.png",
+    "color" : "azul",
+    "size" : "46",
+    "priceLine" : "51",
+    "createdAt" : 1621566000000
+  }
+]

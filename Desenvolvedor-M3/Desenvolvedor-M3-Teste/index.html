@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Agência M3 - Agência de Performance Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="img/favicon.png"/>
+
+  <link rel="stylesheet" type="text/css" href="css/geral.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+  <div class="content">
+
+    <header>
+
+      <section class="header-container">
+        <a href="index.html">
+          <img src="img/m3-logo.png" alt="M3 Performance Digital">
+        </a>
+        
+        <div class="bag">
+          <button type="button" id="bag-btn">
+            <img src="img/bag.png" alt="bag">
+            <span id="bag-count-info">0</span>
+          </button>
+
+          <div class="bag-container">
+            <div class="bag-list">
+              <div class="bag-item">
+                <!-- <img src="/img/body-leopardo.png" alt="body leopardo">
+                <div class="bag-item-info">
+                  <h3 class="bag-item-name">Body leopardo</h3>
+                  <span class="bag-item-price">R$129,90</span>
+                </div>
+
+                <button type="button" class="bag-item-del-btn">X</button> -->
+              </div>
+            </div>
+             <div class="bag-total">
+               <h3>Total: R$</h3>
+               <span id="bag-total-value">129,90</span>
+             </div>
+          </div>
+        </div>
+      </section>
+
+    </header>
+
+
+    
+    <div class="title">
+      <h1>Blusas</h1>
+    </div>
+
+
+    <section class="dropdown-container">
+
+      <button class="btn-responsive" onclick="initOrderNav()">
+        Ordenar
+      </button>
+
+      <div class="dropdown">
+        
+        <button class="dropbtn">Ordenar por:</button>
+        <div class="title-filter-mobile">
+          <h2>ordenar</h2>
+          <button class="close-bnt" onclick="closeOrderNav()">X</button>
+        </div>
+        <div class="dropdown-content">
+          <button onClick="ordenateByTime()"><input type="checkbox" class="all-filter" id="byTime" name="byTime"><label for="byTime">Mais recentes</label></button>
+          <button onClick="ordenateByLowerPrice()"><input type="checkbox" class="all-filter" id="byLprice" name="byLprice"><label for="byLprice">Menor preço</label></button>
+          <button onClick="ordenateByHigherPrice()"><input type="checkbox" class="all-filter" id="byHprice" name="byHprice"><label for="byHprice">Maior preço</label></button>
+        </div>
+        
+      </div>
+    </section>
+    
+
+
+    <section class="nav">
+
+      <button class="btn-responsive" onclick="initFilterNav()">
+        Filtrar
+      </button>
+    
+      <dl class="side-nav js-side-nav">
+        
+        <div class="title-filter-mobile">
+          <h2>Filtrar</h2>
+          <button class="close-bnt" onclick="closeFilterNav()">X</button>
+        </div>
+
+        <dt>Cores</dt>
+        <dd>
+          <ul id="input-cores">
+            <li><a onClick="filterSelectionColor('amarelo')"><input type="radio" id="amarelo" name="color"><label for="amarelo" >Amarelo</label></a></li>
+
+            <li><a onClick="filterSelectionColor('azul')"><input type="radio" id="azul" name="color" ><label for="azul">Azul</label></a></li>
+
+            <li><a onClick="filterSelectionColor('branco')"><input type="radio" id="branco" name="color" class="checkboxAlternate"><label for="branco" >Branco</label></a></li>
+
+            <li><a onClick="filterSelectionColor('cinza')"><input type="radio" id="cinza" name="color" class="checkboxAlternate"><label for="cinza">Cinza</label></ali>
+
+            <li><a onClick="filterSelectionColor('laranja')"><input type="radio" id="laranja" name="color" class="checkboxAlternate"><label for="laranja">Laranja</label></li>
+          </ul>
+          <a class="active-filter button-filter" onClick="filterSelectionColor('all')"><input type="radio" class="all-filter" id="all-cores" name="color"><label for="all-cores">Ver todas as cores</label></a>
+        </dd>
+        
+        <dt>Tamanhos</dt>
+        <dd>
+          <ul class="tamanhos">
+            <li><a onClick="filterSelectionSize('P')">P</a></li>
+            <li><a onClick="filterSelectionSize('M')">M</a></li>
+            <li><a onClick="filterSelectionSize('G')">G</a></li>
+            <li><a onClick="filterSelectionSize('GG')">GG</a></li>
+            <li><a onClick="filterSelectionSize('U')">U</a></li>
+            <li><a onClick="filterSelectionSize('36')">36</a></li>
+            <li><a onClick="filterSelectionSize('38')">38</a></li>
+            <li><a onClick="filterSelectionSize('40')">40</a></li>
+            <li><a onClick="filterSelectionSize('42')">42</a></li>
+            <li><a onClick="filterSelectionSize('44')">44</a></li>
+            <li><a onClick="filterSelectionSize('46')">46</a></li>
+          </ul>
+
+        </dd>
+        
+        <dt>Faixa de preço</dt>
+        <dd>
+          <ul id="input-price">
+            <li><a onClick="filterSelectionPrice('0')"><input type="radio" id="0" name="price"><label for="0">de R$0 até R$50</label></a></li>
+            <li><a onClick="filterSelectionPrice('51')"><input type="radio" id="51" name="price"><label for="51">de R$51 até R$150</label></a></li>
+            <li><a onClick="filterSelectionPrice('151')"><input type="radio" id="151" name="price"><label for="151">de R$151 até R$300</label></a></li>
+            <li><a onClick="filterSelectionPrice('301')"><input type="radio" id="301" name="price"><label for="301">de R$301 até R$500</label></a></li>
+            <li><a onClick="filterSelectionPrice('all')"><input type="radio" id="all" name="price"><label for="all" >a partir de R$ 01</label></a></li>
+          </ul> 
+        </dd>
+
+        
+        <div class="btn-responsive-filter">
+          <button class="btn-responsive-apply">Aplicar</button>
+          <button class="btn-responsive-remove" onClick="filterSelectionClean('all');removeSizeStyle()"><input type="radio" id="clean" name="clean" class="all-filter"><label for="clean">Limpar</label></button>
+        </div>
+     </dl>
+
+    </section>
+      
+      <section class="produtos">
+      
+        <div class="produtos-lista">
+
+          <!-- <div class="produtos-vitrine">
+            <img src="img/camiseta-mescla.png" alt="Camiseta Mescla">
+            <h3>Camiseta Mescla</h3>
+            <span>R$ 28,00</span>
+            <p>até 3x de R$9,33</p>
+            <button class="add-to-bag-btn">Comprar</button>
+          </div> -->
+          
+        </div>
+        
+        <button id="loadMore" class="carregar-mais">Carregar Mais</button>
+    </section>
+
+    
+    <footer class="footer">
+      <p>Agência M3 - Agência de Performance Digital</p>
+    </footer>
+
+    <script src="bagfunctions.js"></script>
+    <script src="filter.js"></script>
+    <script src="loadMore.js"></script>
+    <script src="ordenate.js"></script>
+
+  </div>
+  </body>
+  </html>

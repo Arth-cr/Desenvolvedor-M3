@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  --black: #000000;
+  --blue: #00c0ee;
+
+  --grey-dark: #333333;
+  --grey-medium: #707070;
+  --grey: #666666;
+  --grey-light: #c7c7c7;
+  --background: #ffffff;
+
+  font-size: 62.5% /* 10px */;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: var(--background);
+
+  font-family: "Open Sans", sans-serif;
+}
+
+button,
+input {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
